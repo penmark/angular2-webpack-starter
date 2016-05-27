@@ -1,10 +1,11 @@
-// App
-export * from './app.component';
-export * from './app.service';
+import { provideRouter } from '@ngrx/router';
+import { provideStore } from '@ngrx/store'
 
-import { AppState } from './app.service';
+import { routes } from './routes';
+export * from './app.component';
 
 // Application wide providers
 export const APP_PROVIDERS = [
-  AppState
+  provideRouter(routes),
+  provideStore({})
 ];
