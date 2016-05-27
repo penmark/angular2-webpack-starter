@@ -17,7 +17,7 @@ const ForkCheckerPlugin = require('awesome-typescript-loader').ForkCheckerPlugin
  * Webpack Constants
  */
 const METADATA = {
-  title: 'Angular2 Starter',
+  title: 'Angular2 Webpack Starter by @gdi2290 from @AngularClass',
   baseUrl: '/'
 };
 
@@ -119,7 +119,6 @@ module.exports = {
           // these packages have problems with their sourcemaps
           helpers.root('node_modules/rxjs'),
           helpers.root('node_modules/@angular'),
-          helpers.root('node_modules/@ngrx'),
         ]
       }
 

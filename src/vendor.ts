@@ -9,13 +9,11 @@ import '@angular/platform-browser-dynamic';
 import '@angular/core';
 import '@angular/common';
 import '@angular/http';
+import '@angular/router-deprecated';
 
 // RxJS
-import 'rxjs/Rx';
-import '@ngrx/core';
-import '@ngrx/store';
-import '@ngrx/router';
-import '@ngrx/effects';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/mergeMap';
 
 if ('production' === ENV) {
   // Production
